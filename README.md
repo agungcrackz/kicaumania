@@ -17,9 +17,20 @@ Putar video sebagai ASCII art langsung di terminal, lengkap dengan audio.
 
 ## Instalasi
 
+**Tanpa venv:**
 ```bash
 git clone https://github.com/agungcrackz/kicaumania.git
 cd kicaumania
+pip install -r requirements.txt
+```
+
+**Dengan venv (disarankan):**
+```bash
+git clone https://github.com/agungcrackz/kicaumania.git
+cd kicaumania
+python -m venv venv
+source venv/bin/activate        # Linux/Mac
+venv\Scripts\activate           # Windows
 pip install -r requirements.txt
 ```
 
@@ -37,7 +48,15 @@ ASCII_CHARS = " .:-=+*#%@"  # bisa diganti sesuai selera
 
 3. Jalankan:
 
+**Tanpa venv:**
 ```bash
+python kicau.py
+```
+
+**Dengan venv:**
+```bash
+source venv/bin/activate        # Linux/Mac
+venv\Scripts\activate           # Windows
 python kicau.py
 ```
 
