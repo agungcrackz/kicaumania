@@ -15,10 +15,12 @@ Putar video sebagai ASCII art langsung di terminal, lengkap dengan audio.
 - Python 3.8+
 - Terminal yang support ANSI escape codes
 
-Install dependencies:
+## Instalasi
 
 ```bash
-pip install opencv-python ffpyplayer numpy
+git clone https://github.com/agungcrackz/kicaumania.git
+cd kicaumania
+pip install -r requirements.txt
 ```
 
 ## Cara Pakai
@@ -48,8 +50,3 @@ Tekan `Ctrl+C` untuk berhenti.
 - Audio berjalan bersamaan dengan video
 - Rendering cepat menggunakan numpy (tanpa loop per pixel)
 - Tidak ada flicker — menggunakan ANSI cursor positioning
-
-## Catatan
-
-- Gunakan terminal yang support truecolor dan unicode untuk hasil terbaik
-- Disarankan fullscreen terminal sebelum menjalankan
